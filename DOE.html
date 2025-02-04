@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution Selector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 style="color: black;font-size: 40px;">DOE - Path Finders</h1>
+    <div class="container">
+        <h1>Find Your Solution</h1>
+
+        <div class="question">
+            <p>1. Does the business recognize the reviewer?</p>
+            <div class="options">
+                <label class="option-label">
+                    <input type="radio" name="q1" value="yes" onclick="highlight(this)"> Yes
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q1" value="no" onclick="highlight(this)"> No
+                </label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>2. Did the reviewer provide valid DOE?</p>
+            <div class="options">
+                <label class="option-label">
+                    <input type="radio" name="q2" value="yes" onclick="highlight(this)"> Yes
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q2" value="no" onclick="highlight(this)"> No
+                </label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>3. Does the information match what is available to the business?</p>
+            <div class="options">
+                <label class="option-label">
+                    <input type="radio" name="q3" value="yes" onclick="highlight(this)"> Yes
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q3" value="no" onclick="highlight(this)"> No
+                </label>
+            </div>
+        </div>
+
+        <button onclick="getSolution()">Submit</button>
+
+        <div id="solution-box">
+            <p id="solution">Your solution will appear here.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
